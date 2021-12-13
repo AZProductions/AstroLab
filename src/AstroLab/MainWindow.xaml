@@ -13,6 +13,7 @@
            MinWidth="600"
            MinHeight="400"
             ShowTitle="False"
+           AllowsTransparency="False"
             ui:ThemeManager.IsThemeAware="True"
             ui:TitleBar.ExtendViewIntoTitleBar="False"
             ui:WindowHelper.UseModernWindowStyle="False"
@@ -26,7 +27,10 @@
                 <dragablz:InterTabController />
             </local:TabablzControlEx.InterTabController>
             <TabItem Header="Home">
-                <ui:TabItemHelper.Icon>
+                <Grid>
+                    <Label Content="Welcome" FontWeight="SemiBold" HorizontalAlignment="Left" FontSize="35" VerticalAlignment="Top" Margin="20"></Label>
+                </Grid>
+                    <ui:TabItemHelper.Icon>
                     <ui:SymbolIcon Symbol="Home" />
                 </ui:TabItemHelper.Icon>
             </TabItem>
